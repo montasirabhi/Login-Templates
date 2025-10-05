@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script|Roboto);
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+  :root{
+    --bg:#f7f9fc;
+    --card:#ffffff;
+    --muted:#6b7280;
+    --text:#0f172a;
+    --primary:#2267ff;
+    --grad1:#4058ff;
+    --grad2:#8b5cff;
+    --accent:#06b6d4;
+    --shadow: 0 8px 30px rgba(15,23,42,0.06);
+    --radius:12px;
+  }
+body{
+    background: var(--primary);
+    text-align: center ;
+    font-family: 'Roboto', sans-serif;
+}
+.panda{
+    position: relative;
+    width: 200px;
+    margin: 50px auto;
+}
+.face{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    margin: 50px auto;
+    box-shadow:0 10px 15px rgba(0,0,0,0.15);
+    z-index: 50;
+    position: relative;
+}
+.ear, .ear:after{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: black;
+    z-index: 5;
+    border: 15px solid white;
+    left:-15px;
+    top: -15px;
+    border-radius: 100%;
+}
+.ear:after{
+    content: '';
+    left: 125px;
+}
+.eye-shade{
+    background: black;
+    width: 50px;
+    height:80px;
+    position: absolute;
+    margin: 10px;
+    top: 35px;
+    left: 25px;
+    transform: rotate(220deg);
+    border-radius: 25px/20px 30px 35px 40px;
+}
+.eye-shade.rgt{
+ transform: rotate(140deg);
+ left: 105px;
+}
+.eye-white{
+    position: absolute;
+    width:30px;
+    height:30px;
+    background: white;
+    left:40px;
+    top: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 500;
+}
+.eye-white.rgt{
+    right: 40px;
+    left:auto;
+}
+.eye-ball{
+    position: absolute;
+    width:0px;
+    height:0px;
+    left: 20px;
+    top: 20px;
+    max-width: 10px;
+    max-height: 10px;
+    transition: 0.1s;
+}
+.eye-ball:after{
+    content: '';
+    background: black;
+    width: 20px;
+    height: 20px;
+    right:0;
+    position:absolute;
+    bottom: 0;
+    border-radius: 100%;
+}
+.nose{
+    position: absolute;
+    width:35px;
+    height:20px;
+    bottom: 40px;
+    background: black;
+    left:0;
+    right:0;
+    margin: auto;
+    border-radius: 50px 20px/30px 15px;
+    transform: rotate(15deg);
+}
+.body{
+    background: white;
+    width: 250px;
+    height: 282px;
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    border-radius: 100px 100px 100px 100px/126px 126px 96px 96px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+.hand,
+.hand:after,
+.hand:before{
+    width: 40px;
+    height: 30px;
+    border-radius: 50px;
+    background: black;
+    margin: 5px;
+    box-shadow:0 2px 3px rgba(0,0,0,0.15);
+    position:absolute;
+    top: 70px;
+    left: -25px;
+}
+.hand:after,
+.hand:before{
+    content: '';
+    left:-5px;
+    top:11px;
+}
+.hand::before{
+    top: 26px;
+}
+.hand.rgt,
+.rgt.hand:after,
+.rgt.hand:before{
+    left: auto;
+    right: -25px;
+}
+.hand.rgt:after,
+.hand.rgt:before{
+    left: auto;
+    right: -5px;
+}
+.foot{
+    top: 360px;
+    left: -80px;
+    position: absolute;
+    background: black;
+    width: 82px;
+    height: 120px;
+    z-index: 2000;
+    box-shadow:0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 40px 40px 39px 40px/26px 26px 63px 63px;
+}
+.foot::after{
+    content:'';
+    width: 55px;
+    height: 65px;
+    background: #222;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 100%;
+}
+.foot .finger, .foot .finger:after, .foot .finger:before{
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    background: #222;
+    border-radius: 100%;
+    top: 10px;
+    right: 5px;
+}
+.foot .finger:after,.foot .finger:before{
+    content: '';
+    top: 0;
+    right: 30px;
+    width: 20px;
+}
+.foot .finger:before{
+    right: 55px;
+    top: 5px;
+}
+.foot.rgt{
+    left: auto;
+    right: -80px;
+}
+.foot.rgt .finger, .foot.rgt .finger:after, .foot.rgt .finger:before{
+    left: 5px;
+    right: auto;
+}
+.foot.rgt .finger:before{
+    left: 55px;
+    right: auto;
+}
+.foot.rgt .finger:after{
+    left: 30px;
+    right: auto;
+}
+form{
+    display:none;
+    max-width: 400px;
+    padding: 20px 40px;
+    background: white;
+    height: 300px;
+    margin: auto;
+    display: block;
+    z-index: 500;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    -webkit-transform: translateY(-100px) ;
+    transform:translateY(-100px) ;
+    border:1px solid #eee;
+    position: relative;
+}
+form.up{
+    -webkit-transform: translateY(-180px) ;
+    transform:translateY(-180deg) ;
+}
+h1{
+    color:var(--primary);
+    font-family: 'Dancing Script';
+}
+.btn{
+    background: white;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #2267ff;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    color:white;
+    font-weight: 700;
+    box-shadow: 0 50px #2267ff inset;
+}
+.btn:hover{
+    box-shadow: 0 0 #2267ff inset;
+    color:#2267ff;
+    font-weight: 500;
+}
+.btn:focus{
+    outline: none;
+}
+.form-group{
+   position: relative;
+   font-size: 16px;
+   color:#666;
+}
+.form-group + .form-group{
+    margin-top: 30px;
+}
+.form-group .form-label{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 5px;
+    transition: 0.3s;
+}
+.form-group .form-control{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    background: none;
+    height: 35px;
+    border:none;
+    transition: 0.3s;
+    border-bottom: 1px solid #777;
+    color:#555;
+    padding: 5px 0;
+}
+.form-group .form-control:invalid{
+    outline: none;
+}
+.form-group .form-control:focus,
+.form-group .form-control:valid{
+    outline: none;
+    box-shadow: 0 1px #2267ff;
+    border-color:#2267ff;
+}
+.form-group .form-control:focus + .form-label,
+.form-group .form-control:valid + .form-label{
+    transform: translateY(-15px);
+    font-size: 12px;
+    color: #2267ff;
+}
+.alert{
+    position: absolute;
+    color:#2267ff;
+    font-size: 16px;
+    right: -180;
+    top: 300px;
+    z-index:200;
+    padding:30px 25px;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0, 0);
+    transition: linear 0.4s 0.6s;
+    transition-delay: 0.6s;
+}
+.alert:after{
+    content:'';
+    position: absolute;
+    width:25px;
+    height: 25px;
+    background: white;
+    left:-19px;
+    bottom:-8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.alert:before{
+    width: 15px;
+    height: 15px;
+    left:-35px;
+    bottom:-25px;
+}
+@keyframes eye-blink{
+    to{
+        height: 30px;
+    }
+}

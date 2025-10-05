@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/panda_login.css" />
+</head>
+<body>
+    <!----Panda---->
+    <div class="panda">
+        <div class="ear"></div>
+        <!-------------Face-------------->
+        <div class="face">
+            <div class="eye-shade"></div>
+            <div class="eye-white">
+                <div class="eye-ball"></div>
+            </div>
+            <div class="eye-shade rgt"></div>
+            <div class="eye-white rgt">
+                <div class="eye-ball"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <!------------End Face-------------->
+        <!---Body--->
+        <div class="body"></div>
+        <div class="foot">
+            <div class="finger"></div>
+        </div> 
+        <div class="foot rgt">
+            <div class="finger"></div>  
+        </div>
+    </div>
+    <!----End Panda---->
+    <!-----Login Form---->
+    <form>
+        <!----Hands---->
+        <div class="hand"></div>
+        <div class="hand rgt"></div>
+        <!----End Hands---->
+        <h1>Login</h1>
+        <div class="form-group">
+            <input required="required"  class="form-control" />
+            <label class="form-label" >Username</label>
+        </div>
+         <div class="form-group">
+            <input required="required" type="password" autocomplete="off" id="password" class="form-control" />
+            <label class="form-label" >Password</label>
+            <p class="alert">Invalid Credintial !</p>
+            <button class="btn">Login</button>
+        </div>
+    </form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$('#password').focusin(function(){
+    $('form').addClass('up')
+});
+$('#password').focusout(function(){
+    $('form').removeClass('up')
+});
+// Panda Eye move
+$(document).on("mousemove", function(event) {
+    var dw = $(document).width() / 15;
+    var dh = $(document).height() / 15;
+    var x = event.pageX/ dw;
+    var y = event.pageY/ dh;
+    $('.eye-ball').css({
+        width: x,
+        height: y
+    });
+});
+// validation
+$('.btn').click(function(){
+    $('form').addClass('wrong-entry')
+    setTimeout(function(){
+        $('form').removeClass('wrong-entry');
+    },3000);
+});
+</script>
+
+   
+   
+</body>
+</html>
