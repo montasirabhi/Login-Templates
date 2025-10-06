@@ -57,7 +57,7 @@ transparent-login/
 
 ##  Live Preview
 
-[🔗 Click here to view live demo](#)
+[🔗 Click here to view live demo](https://montasirabhi.github.io/Login-Templates/Transparent_Login_Page/index.html)
 
 ---
 
