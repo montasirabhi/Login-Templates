@@ -1,11 +1,11 @@
-# 🔐 Login Page Repository
+#  Login Page Repository
 
 This repository contains a collection of different **Login Page Templates**.
 Each template is organized in its own folder with the necessary files.
 
 ---
 
-## 📂 File Structure
+##  File Structure
 
 ```
 login-pages/
@@ -29,7 +29,7 @@ login-pages/
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 1. Clone or download this repository.
 2. Open any design folder.
@@ -44,17 +44,17 @@ login-pages/
 * Integrate with backend logic if required.
 
 ---
-## 👨‍💻 Author
+##  Author
 
 **MD MONTASIR RAHMAN ABHI**
 
 * Web Designer | Web Developer | Digital Marketer
-* 📧 Email: [montasirrahmanabhi01@gmail.com](mailto:montasirrahmanabhi01@gmail.com)
-* 📞 Phone: +8801709105255
-* Portfolio : <a href="https://www.montasirabhi.com/">
+*  Email: [montasirrahmanabhi01@gmail.com](mailto:montasirrahmanabhi01@gmail.com)
+*  Phone: +8801709105255
+* Portfolio : <a href="https://www.montasirabhi.com/">Click Here To View </a>
 
 ---
 
-## 📜 License
+##  License
 
 Free to use for practice, personal, or educational purposes.
