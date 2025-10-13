@@ -1,6 +1,6 @@
-# 🐼 Panda Login Page
+# Formal Login Page
 
-An **Animated Login Page** with a cute panda design built using **HTML, CSS, and jQuery**.
+An **Formal Login Page** with a cute panda design built using **HTML, CSS, and jQuery**.
 The panda reacts to user actions like typing a password or moving the mouse.
 
 ---
@@ -8,10 +8,9 @@ The panda reacts to user actions like typing a password or moving the mouse.
 ##  Project Structure
 
 ```
-panda-login/
+formal-login-page/
 │── index.html       # Main HTML file
-│── login.css        # Styles for panda and login form
-│── preview.png      # Screenshot of the design
+│── style.css        # Styles for panda and login form
 │── README.md        # Documentation
 ```
 
@@ -57,14 +56,8 @@ panda-login/
 
 ## 🌐 Live Preview
 
-[🔗 Click here to view live demo](https://montasirabhi.github.io/Login-Templates/Panda_Login_Template/index.html)
+[🔗 Click here to view live demo](https://montasirabhi.github.io/Login-Templates/Formal_Login_Page/index.html)
 
-
----
-
-## 📸 Preview Image
-
-<img src="Preview.png">
 
 ---
 
